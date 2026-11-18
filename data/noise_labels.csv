@@ -1,0 +1,83 @@
+noise_id,cause,rule_id,entity,start,end,description
+N001,senha_esquecida,R01,bernardo.mendes,2026-10-21 15:49:06,2026-10-21 15:51:17,bernardo.mendes errou a senha 6 vezes e acertou em seguida
+N002,senha_esquecida,R01,xavier.melo,2026-10-26 12:49:10,2026-10-26 12:52:09,xavier.melo errou a senha 9 vezes e acertou em seguida
+N003,senha_esquecida,R01,carla.borges,2026-10-19 14:52:19,2026-10-19 14:54:55,carla.borges errou a senha 8 vezes e acertou em seguida
+N004,senha_esquecida,R01,felipe.gomes,2026-10-08 16:21:04,2026-10-08 16:24:19,felipe.gomes errou a senha 6 vezes e acertou em seguida
+N005,senha_esquecida,R01,gisele.souza,2026-10-08 09:23:58,2026-10-08 09:25:42,gisele.souza errou a senha 6 vezes e acertou em seguida
+N006,senha_esquecida,R01,diego.araujo,2026-10-29 09:57:09,2026-10-29 10:00:10,diego.araujo errou a senha 7 vezes e acertou em seguida
+N007,senha_esquecida,R01,joao.freitas,2026-10-19 14:38:03,2026-10-19 14:41:12,joao.freitas errou a senha 8 vezes e acertou em seguida
+N008,senha_esquecida,R01,hugo.moura,2026-10-07 09:22:00,2026-10-07 09:24:42,hugo.moura errou a senha 8 vezes e acertou em seguida
+N009,senha_esquecida,R01,ana.costa,2026-10-16 16:14:09,2026-10-16 16:17:14,ana.costa errou a senha 6 vezes e acertou em seguida
+N010,senha_esquecida,R01,yara.viana,2026-10-15 14:19:48,2026-10-15 14:22:08,yara.viana errou a senha 5 vezes e acertou em seguida
+N011,senha_esquecida,R01,sofia.correia,2026-10-16 14:45:57,2026-10-16 14:48:10,sofia.correia errou a senha 5 vezes e acertou em seguida
+N012,senha_esquecida,R01,tiago.pinto,2026-10-30 10:15:06,2026-10-30 10:17:55,tiago.pinto errou a senha 5 vezes e acertou em seguida
+N013,senha_esquecida,R01,felipe.mendes,2026-10-20 14:06:49,2026-10-20 14:08:30,felipe.mendes errou a senha 8 vezes e acertou em seguida
+N014,senha_esquecida,R01,isabela.teixeira,2026-10-02 08:27:03,2026-10-02 08:30:20,isabela.teixeira errou a senha 8 vezes e acertou em seguida
+N015,senha_esquecida,R01,zeca.nunes,2026-10-23 16:22:31,2026-10-23 16:24:52,zeca.nunes errou a senha 7 vezes e acertou em seguida
+N016,senha_esquecida,R01,bernardo.martins,2026-10-29 09:55:05,2026-10-29 09:57:48,bernardo.martins errou a senha 5 vezes e acertou em seguida
+N017,senha_esquecida,R01,yara.dias,2026-10-05 09:21:00,2026-10-05 09:23:54,yara.dias errou a senha 8 vezes e acertou em seguida
+N018,senha_esquecida,R01,nelson.campos,2026-10-15 12:53:08,2026-10-15 12:53:59,nelson.campos errou a senha 5 vezes e acertou em seguida
+N019,senha_esquecida,R01,paulo.pinto,2026-10-28 16:17:17,2026-10-28 16:20:03,paulo.pinto errou a senha 5 vezes e acertou em seguida
+N020,senha_esquecida,R01,lucas.mendes,2026-10-14 17:35:22,2026-10-14 17:37:11,lucas.mendes errou a senha 9 vezes e acertou em seguida
+N021,senha_esquecida,R01,zeca.dias,2026-10-16 09:08:46,2026-10-16 09:10:41,zeca.dias errou a senha 5 vezes e acertou em seguida
+N022,senha_esquecida,R01,marina.ribeiro,2026-10-21 11:19:39,2026-10-21 11:21:05,marina.ribeiro errou a senha 5 vezes e acertou em seguida
+N023,senha_esquecida,R01,bernardo.pereira,2026-10-12 08:16:27,2026-10-12 08:18:53,bernardo.pereira errou a senha 8 vezes e acertou em seguida
+N024,senha_esquecida,R01,marina.araujo,2026-10-29 11:52:29,2026-10-29 11:55:12,marina.araujo errou a senha 9 vezes e acertou em seguida
+N025,senha_esquecida,R01,nelson.barros,2026-10-14 13:20:12,2026-10-14 13:23:19,nelson.barros errou a senha 8 vezes e acertou em seguida
+N026,rotacao_senha_servico,R01,svc_backup,2026-10-16 02:05:01,2026-10-16 02:08:39,svc_backup: 47 falhas após rotação de senha
+N027,rotacao_senha_servico,R01,svc_etl,2026-10-09 02:05:15,2026-10-09 02:08:21,svc_etl: 38 falhas após rotação de senha
+N028,quiosque_recepcao,R01,kiosk_recepcao,2026-10-08 09:12:15,2026-10-08 09:15:17,Conta compartilhada da recepção com 14 falhas
+N029,proxy_segunda_de_manha,R02,198.51.100.10,2026-10-05 08:00:17,2026-10-05 08:39:59,29 usuários falham após o fim de semana atrás do proxy
+N030,proxy_segunda_de_manha,R02,198.51.100.10,2026-10-12 08:00:38,2026-10-12 08:39:51,20 usuários falham após o fim de semana atrás do proxy
+N031,proxy_segunda_de_manha,R02,198.51.100.10,2026-10-19 08:00:05,2026-10-19 08:38:11,24 usuários falham após o fim de semana atrás do proxy
+N032,proxy_segunda_de_manha,R02,198.51.100.10,2026-10-26 08:00:09,2026-10-26 08:39:29,22 usuários falham após o fim de semana atrás do proxy
+N033,nat_filial,R02,198.51.100.30,2026-10-29 14:27:54,2026-10-29 14:30:30,Filial com NAT compartilhado: 7 contas falharam
+N034,nat_filial,R02,198.51.100.30,2026-10-15 11:10:34,2026-10-15 11:16:39,Filial com NAT compartilhado: 6 contas falharam
+N035,nat_filial,R02,198.51.100.30,2026-10-07 13:13:11,2026-10-07 13:18:43,Filial com NAT compartilhado: 8 contas falharam
+N036,nat_filial,R02,198.51.100.30,2026-10-30 11:32:29,2026-10-30 11:38:00,Filial com NAT compartilhado: 7 contas falharam
+N037,nat_filial,R02,198.51.100.30,2026-10-23 12:19:18,2026-10-23 12:24:46,Filial com NAT compartilhado: 6 contas falharam
+N038,nat_filial,R02,198.51.100.30,2026-10-26 14:29:35,2026-10-26 14:33:12,Filial com NAT compartilhado: 6 contas falharam
+N039,pentest_autorizado,R02,198.51.100.250,2026-10-28 14:00:53,2026-10-28 14:08:22,"Teste de intrusão autorizado, 15 contas"
+N040,saida_vpn_exterior,R03,felipe.costa,2026-10-02 09:00:00,2026-10-02 10:00:00,felipe.costa conectou pela VPN com saída na Holanda
+N041,saida_vpn_exterior,R03,xavier.lima,2026-10-30 09:11:00,2026-10-30 10:08:00,xavier.lima conectou pela VPN com saída na Holanda
+N042,saida_vpn_exterior,R03,joao.alves,2026-10-21 09:11:00,2026-10-21 10:04:00,joao.alves conectou pela VPN com saída na Holanda
+N043,saida_vpn_exterior,R03,amanda.ribeiro,2026-10-20 09:00:00,2026-10-20 09:44:00,amanda.ribeiro conectou pela VPN com saída na Holanda
+N044,saida_vpn_exterior,R03,paulo.viana,2026-10-22 09:07:00,2026-10-22 09:40:00,paulo.viana conectou pela VPN com saída na Holanda
+N045,saida_vpn_exterior,R03,karina.alves,2026-10-06 09:18:00,2026-10-06 10:08:00,karina.alves conectou pela VPN com saída na Holanda
+N046,saida_vpn_exterior,R03,carla.araujo,2026-10-02 09:15:00,2026-10-02 10:17:00,carla.araujo conectou pela VPN com saída na Holanda
+N047,saida_vpn_exterior,R03,yara.alves,2026-10-15 09:18:00,2026-10-15 10:07:00,yara.alves conectou pela VPN com saída na Holanda
+N048,saida_vpn_exterior,R03,felipe.melo,2026-10-20 09:15:00,2026-10-20 10:22:00,felipe.melo conectou pela VPN com saída na Holanda
+N049,saida_vpn_exterior,R03,joao.fogaca,2026-10-08 09:14:00,2026-10-08 10:29:00,joao.fogaca conectou pela VPN com saída na Holanda
+N050,geolocalizacao_movel,R03,elisa.mendes,2026-10-06 09:00:00,2026-10-06 11:30:00,elisa.mendes: geolocalização incorreta da operadora (150 min)
+N051,geolocalizacao_movel,R03,olivia.gomes,2026-10-07 09:00:00,2026-10-07 10:30:00,olivia.gomes: geolocalização incorreta da operadora (90 min)
+N052,aprovacao_errada,R04,felipe.barros,2026-10-22 16:04:00,2026-10-22 16:06:45,felipe.barros: 3 notificações sem sucesso e aprovação em seguida
+N053,aprovacao_errada,R04,olivia.teixeira,2026-10-30 12:11:00,2026-10-30 12:14:45,olivia.teixeira: 4 notificações sem sucesso e aprovação em seguida
+N054,aprovacao_errada,R04,elisa.moura,2026-10-13 15:08:00,2026-10-13 15:11:45,elisa.moura: 4 notificações sem sucesso e aprovação em seguida
+N055,aprovacao_errada,R04,isabela.alves,2026-10-19 10:28:00,2026-10-19 10:31:45,isabela.alves: 4 notificações sem sucesso e aprovação em seguida
+N056,aprovacao_errada,R04,amanda.campos,2026-10-07 09:12:00,2026-10-07 09:15:45,amanda.campos: 4 notificações sem sucesso e aprovação em seguida
+N057,aprovacao_errada,R04,felipe.lima,2026-10-15 09:26:00,2026-10-15 09:28:45,felipe.lima: 3 notificações sem sucesso e aprovação em seguida
+N058,aprovacao_errada,R04,elisa.rocha,2026-10-02 08:13:00,2026-10-02 08:16:45,elisa.rocha: 4 notificações sem sucesso e aprovação em seguida
+N059,aprovacao_errada,R04,diego.dias,2026-10-29 08:30:00,2026-10-29 08:32:45,diego.dias: 3 notificações sem sucesso e aprovação em seguida
+N060,falha_app_autenticador,R04,gisele.castro,2026-10-05 16:18:00,2026-10-05 16:23:45,gisele.castro: 6 notificações sem sucesso e aprovação em seguida
+N061,mudanca_com_chamado,R05,carla.lima,2026-10-28 11:08:00,2026-10-28 11:08:00,carla.lima adicionado a GG-Domain-Admins
+N062,mudanca_com_chamado,R05,zeca.moreira,2026-10-26 17:19:00,2026-10-26 17:19:00,zeca.moreira adicionado a GG-Server-Admins
+N063,mudanca_com_chamado,R05,diego.costa,2026-10-20 13:14:00,2026-10-20 13:14:00,diego.costa adicionado a GG-DB-Admins
+N064,mudanca_com_chamado,R05,vitor.lima,2026-10-20 09:20:00,2026-10-20 09:20:00,vitor.lima adicionado a GG-IAM-Admins
+N065,mudanca_com_chamado,R05,marina.rocha,2026-10-05 10:29:00,2026-10-05 10:29:00,marina.rocha adicionado a GG-Prod-Deploy
+N066,mudanca_com_chamado,R05,olivia.fogaca,2026-10-13 14:52:00,2026-10-13 14:52:00,olivia.fogaca adicionado a GG-Domain-Admins
+N067,mudanca_com_chamado,R05,lucas.alves,2026-10-15 09:25:00,2026-10-15 09:25:00,lucas.alves adicionado a GG-Server-Admins
+N068,mudanca_com_chamado,R05,marina.melo,2026-10-26 12:56:00,2026-10-26 12:56:00,marina.melo adicionado a GG-DB-Admins
+N069,mudanca_com_chamado,R05,daniel.moura,2026-10-05 09:21:00,2026-10-05 09:21:00,daniel.moura adicionado a GG-IAM-Admins
+N070,mudanca_com_chamado,R05,olivia.costa,2026-10-05 11:58:00,2026-10-05 11:58:00,olivia.costa adicionado a GG-Prod-Deploy
+N071,mudanca_com_chamado,R05,bruno.borges,2026-10-02 17:12:00,2026-10-02 17:12:00,bruno.borges adicionado a GG-Domain-Admins
+N072,mudanca_com_chamado,R05,olivia.ribeiro,2026-10-12 12:45:00,2026-10-12 12:45:00,olivia.ribeiro adicionado a GG-Server-Admins
+N073,chamado_ainda_nao_registrado,R05,felipe.alves,2026-10-20 14:43:00,2026-10-20 14:43:00,felipe.alves adicionado a GG-DB-Admins
+N074,retorno_de_ferias,R06,isabela.nunes,2026-10-21 07:00:00,2026-10-21 09:30:00,isabela.nunes voltou de férias após ~20 dias
+N075,retorno_de_ferias,R06,rafael.lima,2026-10-19 07:00:00,2026-10-19 09:30:00,rafael.lima voltou de férias após ~18 dias
+N076,retorno_de_ferias,R06,felipe.lopes,2026-10-20 07:00:00,2026-10-20 09:30:00,felipe.lopes voltou de férias após ~19 dias
+N077,retorno_de_ferias,R06,paulo.moura,2026-10-19 07:00:00,2026-10-19 09:30:00,paulo.moura voltou de férias após ~18 dias
+N078,retorno_de_ferias,R06,bruno.castro,2026-10-20 07:00:00,2026-10-20 09:30:00,bruno.castro voltou de férias após ~19 dias
+N079,retorno_de_ferias,R06,rafael.fogaca,2026-10-20 07:00:00,2026-10-20 09:30:00,rafael.fogaca voltou de férias após ~19 dias
+N080,retorno_de_ferias,R06,lucas.moreira,2026-10-19 07:00:00,2026-10-19 09:30:00,lucas.moreira voltou de férias após ~18 dias
+N081,retorno_de_ferias,R06,diego.gomes,2026-10-19 07:00:00,2026-10-19 09:30:00,diego.gomes voltou de férias após ~18 dias
+N082,retorno_turno_noturno,R06,paulo.moreira,2026-10-27 02:30:00,2026-10-27 02:30:00,paulo.moreira voltou de licença e trabalha no turno da noite

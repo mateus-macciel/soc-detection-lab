@@ -1,0 +1,5 @@
+severity,label_pt,severity_order,weight
+critical,Crítico,1,4
+high,Alto,2,3
+medium,Médio,3,2
+low,Baixo,4,1

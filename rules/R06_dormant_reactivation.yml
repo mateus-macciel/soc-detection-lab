@@ -1,0 +1,28 @@
+id: R06
+name: dormant_account_reactivation
+title: Conta dormente reativada de madrugada
+description: Conta sem logon por muito tempo que volta a acessar em horário incomum.
+status: tuned
+severity: medium
+source: idp
+attack:
+  tactic: Initial Access
+  technique: T1078
+  name: Valid Accounts
+  reference: https://attack.mitre.org/techniques/T1078/
+params:
+  min_dormant_days: 21
+  night_only: true
+  night_start_hour: 0
+  night_end_hour: 5
+baseline:
+  min_dormant_days: 14
+  night_only: false
+  night_start_hour: 0
+  night_end_hour: 5
+false_positives:
+  - Retorno de férias ou licença, em especial de quem trabalha em turno noturno
+response:
+  - Confirmar com o gestor se a pessoa deveria estar ativa
+  - Desativar a conta se for de ex-colaborador ou terceiro
+  - Revisar origem do acesso e ações realizadas

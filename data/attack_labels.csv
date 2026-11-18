@@ -1,0 +1,31 @@
+attack_id,scenario,rule_id,entity,start,end,description
+A001,rapido_sem_sucesso,R01,olivia.moreira,2026-10-14 14:27:04,2026-10-14 14:29:20,Força bruta de 203.0.113.1 contra olivia.moreira: 30 falhas em 150s
+A002,com_sucesso,R01,daniel.barros,2026-10-06 12:00:01,2026-10-06 12:03:28,Força bruta de 203.0.113.2 contra daniel.barros: 22 falhas em 200s
+A003,lento,R01,marina.pereira,2026-10-16 11:18:07,2026-10-16 11:22:01,Força bruta de 203.0.113.3 contra marina.pereira: 14 falhas em 270s
+A004,conta_admin,R01,adm.silva,2026-10-28 11:19:07,2026-10-28 11:23:00,Força bruta de 203.0.113.4 contra adm.silva: 40 falhas em 240s
+A005,madrugada,R01,hugo.rocha,2026-10-06 02:28:05,2026-10-06 02:31:17,Força bruta de 203.0.113.5 contra hugo.rocha: 35 falhas em 180s
+A006,lento,R02,203.0.113.6,2026-10-22 14:01:13,2026-10-22 14:09:28,Spraying de 203.0.113.6 contra 25 contas em 540s
+A007,rapido,R02,203.0.113.7,2026-10-21 11:00:19,2026-10-21 11:04:04,Spraying de 203.0.113.7 contra 40 contas em 240s
+A008,madrugada,R02,203.0.113.8,2026-10-15 03:00:16,2026-10-15 03:06:55,Spraying de 203.0.113.8 contra 30 contas em 420s
+A009,inclui_admins,R02,203.0.113.9,2026-10-26 16:01:12,2026-10-26 16:08:49,Spraying de 203.0.113.9 contra 35 contas em 500s
+A010,com_sucesso,R02,203.0.113.10,2026-10-15 09:00:44,2026-10-15 09:09:06,Spraying de 203.0.113.10 contra 28 contas em 480s
+A011,viagem_impossivel_RU,R03,gisele.melo,2026-10-14 10:12:00,2026-10-14 10:37:00,gisele.melo: BR e RU com 25 min de diferença
+A012,viagem_impossivel_RO,R03,nelson.cardoso,2026-10-30 10:12:00,2026-10-30 10:57:00,nelson.cardoso: BR e RO com 45 min de diferença
+A013,viagem_impossivel_CN,R03,ana.araujo,2026-10-12 10:07:00,2026-10-12 11:17:00,ana.araujo: BR e CN com 70 min de diferença
+A014,viagem_impossivel_NG,R03,bruno.souza,2026-10-23 10:09:00,2026-10-23 11:44:00,bruno.souza: BR e NG com 95 min de diferença
+A015,viagem_impossivel_VN,R03,karina.fogaca,2026-10-27 10:18:00,2026-10-27 12:08:00,karina.fogaca: BR e VN com 110 min de diferença
+A016,fadiga_6_prompts,R04,daniel.farias,2026-10-05 22:15:00,2026-10-05 22:19:25,daniel.farias: 6 notificações MFA e uma aprovação
+A017,fadiga_7_prompts,R04,yara.martins,2026-10-19 20:15:00,2026-10-19 20:20:10,yara.martins: 7 notificações MFA e uma aprovação
+A018,fadiga_8_prompts,R04,amanda.dias,2026-10-13 19:32:00,2026-10-13 19:37:55,amanda.dias: 8 notificações MFA e uma aprovação
+A019,fadiga_9_prompts,R04,hugo.lopes,2026-10-07 20:07:00,2026-10-07 20:13:40,hugo.lopes: 9 notificações MFA e uma aprovação
+A020,fadiga_10_prompts,R04,vitor.barros,2026-10-08 20:37:00,2026-10-08 20:44:25,vitor.barros: 10 notificações MFA e uma aprovação
+A021,grupo_domain,R05,hugo.fogaca,2026-10-29 02:25:00,2026-10-29 02:25:00,hugo.fogaca adicionado a GG-Domain-Admins sem chamado
+A022,grupo_server,R05,hugo.martins,2026-10-30 01:48:00,2026-10-30 01:48:00,hugo.martins adicionado a GG-Server-Admins sem chamado
+A023,grupo_db_iam,R05,felipe.pinto,2026-10-07 01:17:00,2026-10-07 01:19:00,"felipe.pinto adicionado a GG-DB-Admins, GG-IAM-Admins sem chamado"
+A024,grupo_iam,R05,elisa.freitas,2026-10-05 04:43:00,2026-10-05 04:43:00,elisa.freitas adicionado a GG-IAM-Admins sem chamado
+A025,grupo_prod,R05,hugo.moreira,2026-10-14 04:39:00,2026-10-14 04:39:00,hugo.moreira adicionado a GG-Prod-Deploy sem chamado
+A026,conta_dormente_RU,R06,xavier.ribeiro,2026-10-29 03:06:00,2026-10-29 03:18:00,xavier.ribeiro sem acesso desde o dia 1 e reativada às 03:06
+A027,conta_dormente_RO,R06,ana.rocha,2026-10-28 04:57:00,2026-10-28 05:09:00,ana.rocha sem acesso desde o dia 1 e reativada às 04:57
+A028,conta_dormente_CN,R06,marina.fogaca,2026-10-27 01:03:00,2026-10-27 01:15:00,marina.fogaca sem acesso desde o dia 1 e reativada às 01:03
+A029,conta_dormente_NG,R06,felipe.souza,2026-10-30 04:53:00,2026-10-30 05:05:00,felipe.souza sem acesso desde o dia 1 e reativada às 04:53
+A030,conta_dormente_VN,R06,amanda.castro,2026-10-28 04:33:00,2026-10-28 04:45:00,amanda.castro sem acesso desde o dia 1 e reativada às 04:33

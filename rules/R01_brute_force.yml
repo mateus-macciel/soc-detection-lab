@@ -1,0 +1,28 @@
+id: R01
+name: brute_force_single_account
+title: Força bruta contra uma conta
+description: Muitas falhas de logon (4625) contra a mesma conta, vindas do mesmo IP, em uma janela curta.
+status: tuned
+severity: high
+source: windows
+attack:
+  tactic: Credential Access
+  technique: T1110.001
+  name: Password Guessing
+  reference: https://attack.mitre.org/techniques/T1110/001/
+params:
+  window_seconds: 300
+  threshold: 10
+  exclude_account_types: [service]
+baseline:
+  window_seconds: 300
+  threshold: 5
+  exclude_account_types: []
+false_positives:
+  - Usuário que esquece a senha e tenta várias vezes
+  - Conta de serviço com senha desatualizada tentando em loop
+  - Conta compartilhada de quiosque ou recepção
+response:
+  - Confirmar se houve logon bem-sucedido (4624) do mesmo IP logo após as falhas
+  - Bloquear o IP de origem e redefinir a senha da conta se houve sucesso
+  - Verificar outros logons da conta nas últimas 24 horas

@@ -1,0 +1,25 @@
+id: R03
+name: impossible_travel
+title: Login de local improvável
+description: Dois logons bem-sucedidos da mesma conta em países diferentes em um intervalo curto demais para uma viagem.
+status: tuned
+severity: high
+source: idp
+attack:
+  tactic: Initial Access
+  technique: T1078
+  name: Valid Accounts
+  reference: https://attack.mitre.org/techniques/T1078/
+params:
+  max_gap_minutes: 120
+  exclude_ip_types: [corporate_vpn]
+baseline:
+  max_gap_minutes: 240
+  exclude_ip_types: []
+false_positives:
+  - Usuário conectado à VPN corporativa, que sai por outro país
+  - Geolocalização imprecisa de operadora móvel
+response:
+  - Validar com o usuário se os dois acessos foram dele
+  - Revogar sessões e forçar nova autenticação com MFA se não foram
+  - Revisar atividade da conta após o segundo logon

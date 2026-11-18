@@ -1,0 +1,24 @@
+id: R05
+name: privileged_group_change_without_ticket
+title: Adição a grupo privilegiado sem chamado
+description: Conta adicionada a um grupo privilegiado (4728/4732) sem chamado de mudança aprovado.
+status: tuned
+severity: critical
+source: windows
+attack:
+  tactic: Persistence
+  technique: T1098
+  name: Account Manipulation
+  reference: https://attack.mitre.org/techniques/T1098/
+params:
+  require_missing_ticket: true
+  privileged_groups: [GG-Domain-Admins, GG-Server-Admins, GG-DB-Admins, GG-IAM-Admins, GG-Prod-Deploy]
+baseline:
+  require_missing_ticket: false
+  privileged_groups: [GG-Domain-Admins, GG-Server-Admins, GG-DB-Admins, GG-IAM-Admins, GG-Prod-Deploy]
+false_positives:
+  - Mudança legítima em que o chamado ainda não foi registrado
+response:
+  - Verificar quem executou a mudança (actor) e a origem do logon dele
+  - Remover a conta do grupo se a mudança não foi autorizada
+  - Revisar as demais ações da conta do executor

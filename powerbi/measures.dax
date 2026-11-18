@@ -1,0 +1,55 @@
+// Medidas do dashboard SOC. Tabelas: fact_alert, fact_evaluation, fact_fp_cause, fact_daily_alerts,
+// fact_signin_heatmap, dim_rule, dim_ruleset, dim_severity, dim_date.
+// Relacionamentos (muitos para um, filtro de dim para fact):
+//   fact_alert[rule_id]        -> dim_rule[rule_id]
+//   fact_alert[ruleset]        -> dim_ruleset[ruleset]
+//   fact_alert[alert_date]     -> dim_date[date]
+//   fact_alert[severity]       -> dim_severity[severity]
+//   fact_evaluation[rule_id]   -> dim_rule[rule_id]     (linha TOTAL fica de fora, veja README)
+//   fact_evaluation[ruleset]   -> dim_ruleset[ruleset]
+//   fact_fp_cause[rule_id]     -> dim_rule[rule_id]
+//   fact_fp_cause[ruleset]     -> dim_ruleset[ruleset]
+
+Alertas = COUNTROWS ( fact_alert )
+
+Verdadeiros Positivos = CALCULATE ( [Alertas], fact_alert[classification] = "TP" )
+
+Falsos Positivos = CALCULATE ( [Alertas], fact_alert[classification] = "FP" )
+
+Precisão = DIVIDE ( [Verdadeiros Positivos], [Alertas] )
+
+Ataques Simulados =
+CALCULATE ( SUM ( fact_evaluation[attacks] ), fact_evaluation[rule_id] <> "TOTAL" )
+
+Ataques Detectados =
+CALCULATE ( SUM ( fact_evaluation[detected] ), fact_evaluation[rule_id] <> "TOTAL" )
+
+Recall = DIVIDE ( [Ataques Detectados], [Ataques Simulados] )
+
+F1 = DIVIDE ( 2 * [Precisão] * [Recall], [Precisão] + [Recall] )
+
+// Comparação entre conjuntos, independente da seleção de dim_ruleset
+FP Baseline =
+CALCULATE ( [Falsos Positivos], dim_ruleset[ruleset] = "baseline" )
+
+FP Ajustado =
+CALCULATE ( [Falsos Positivos], dim_ruleset[ruleset] = "tuned" )
+
+Redução de FP % = 1 - DIVIDE ( [FP Ajustado], [FP Baseline] )
+
+Alertas Críticos e Altos =
+CALCULATE ( [Alertas], fact_alert[severity] IN { "critical", "high" } )
+
+Técnicas ATT&CK Cobertas = DISTINCTCOUNT ( dim_rule[technique] )
+
+Regras com Falso Positivo Residual =
+CALCULATE ( DISTINCTCOUNT ( fact_alert[rule_id] ), fact_alert[classification] = "FP" )
+
+Alertas Fora do Horário =
+CALCULATE (
+    [Alertas],
+    FILTER ( fact_alert, HOUR ( fact_alert[first_seen] ) < 7 || HOUR ( fact_alert[first_seen] ) >= 19 )
+)
+
+// Para o mapa de calor (matriz weekday x hour com fact_signin_heatmap[signins] como valor)
+Sign-ins = SUM ( fact_signin_heatmap[signins] )

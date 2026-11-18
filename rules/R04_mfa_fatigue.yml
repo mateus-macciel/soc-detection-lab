@@ -1,0 +1,25 @@
+id: R04
+name: mfa_fatigue
+title: Fadiga de MFA seguida de aprovação
+description: Várias notificações de MFA recusadas ou sem resposta, seguidas de uma aprovação, em poucos minutos.
+status: tuned
+severity: high
+source: idp
+attack:
+  tactic: Credential Access
+  technique: T1621
+  name: Multi-Factor Authentication Request Generation
+  reference: https://attack.mitre.org/techniques/T1621/
+params:
+  window_seconds: 600
+  min_failed_prompts: 5
+baseline:
+  window_seconds: 600
+  min_failed_prompts: 3
+false_positives:
+  - Usuário que recusa por engano e aprova em seguida
+  - Aplicativo autenticador com falha, gerando timeouts
+response:
+  - Contatar o usuário por outro canal e confirmar se ele aprovou a notificação
+  - Revogar sessões ativas e redefinir a senha
+  - Considerar MFA com número de confirmação (number matching)

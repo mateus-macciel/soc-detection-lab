@@ -1,0 +1,42 @@
+{
+  "name": "SOC Editorial",
+  "dataColors": ["#C93A1E", "#1B1A17", "#9C9484", "#1F6F5C", "#2B4FA3", "#8A5A00", "#625C50", "#DDD5C4"],
+  "background": "#F4F0E8",
+  "secondaryBackground": "#EAE4D7",
+  "foreground": "#1B1A17",
+  "firstLevelElements": "#1B1A17",
+  "secondLevelElements": "#625C50",
+  "thirdLevelElements": "#DDD5C4",
+  "fourthLevelElements": "#C93A1E",
+  "tableAccent": "#C93A1E",
+  "good": "#1F6F5C",
+  "neutral": "#8A5A00",
+  "bad": "#C93A1E",
+  "maximum": "#C93A1E",
+  "center": "#8A5A00",
+  "minimum": "#1F6F5C",
+  "null": "#9C9484",
+  "textClasses": {
+    "callout": { "fontSize": 40, "fontFace": "Georgia", "color": "#1B1A17" },
+    "title":   { "fontSize": 14, "fontFace": "Georgia", "color": "#1B1A17" },
+    "header":  { "fontSize": 12, "fontFace": "Segoe UI Semibold", "color": "#625C50" },
+    "label":   { "fontSize": 12, "fontFace": "Segoe UI", "color": "#625C50" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": false }],
+        "border": [{ "show": false }],
+        "dropShadow": [{ "show": false }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#1B1A17" } }, "fontSize": 14, "fontFamily": "Georgia", "alignment": "left" }],
+        "categoryAxis": [{ "gridlineShow": false, "labelColor": { "solid": { "color": "#1B1A17" } } }],
+        "valueAxis": [{ "gridlineShow": true, "gridlineColor": { "solid": { "color": "#DDD5C4" } }, "labelColor": { "solid": { "color": "#625C50" } } }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F4F0E8" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

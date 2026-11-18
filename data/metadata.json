@@ -1,0 +1,18 @@
+{
+  "seed": 42,
+  "users": 300,
+  "start": "2026-10-01",
+  "days": 30,
+  "windows_events": 6426,
+  "idp_signins": 18904,
+  "accounts": 311,
+  "attack_scenarios": 30,
+  "noise_events": 82,
+  "event_codes": {
+    "4624": 5516,
+    "4625": 829,
+    "4728": 39,
+    "4732": 40,
+    "4740": 2
+  }
+}
