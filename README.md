@@ -8,6 +8,8 @@ Laboratório de **detecção como código** para um SOC: seis regras de detecç�
 rodando em **Python (pandas) e em SQL**, avaliadas contra ataques simulados e contra comportamento legítimo
 que parece ataque. O resultado alimenta um dashboard em Power BI.
 
+![Dashboard no Power BI: visão geral do laboratório](docs/visao-geral.png)
+
 > Todos os dados são sintéticos. Usuários, domínios e contas são fictícios e os IPs usam apenas as faixas de
 > documentação RFC 5737 (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`). Nada aqui é de empresa real,
 > e o projeto é puramente defensivo: detecta e analisa, não ataca nada.
@@ -21,7 +23,7 @@ Executando `make demo` (30 dias, 300 usuários, semente 42):
 | Baseline (limiares ingênuos) | 110 | 30/30 | 80 | 27% | 100% | 43% |
 | Ajustado | 36 | 30/30 | 6 | 83% | 100% | 91% |
 
-O ajuste cortou 92% dos falsos positivos sem perder nenhum ataque. Cada mudança resolve uma causa de ruído
+O ajuste cortou 92,5% dos falsos positivos sem perder nenhum ataque. Cada mudança resolve uma causa de ruído
 identificada (proxy na segunda de manhã, rotação de senha de conta de serviço, VPN com saída no exterior,
 mudança de grupo com chamado aprovado). Os 6 que sobram são legítimos de propósito e só se separam de um
 ataque com contexto fora dos logs. Detalhes em [`docs/metodologia.md`](docs/metodologia.md).
@@ -69,7 +71,7 @@ sql/rules/    as mesmas seis regras em SQL, com funções de janela (SQLite)
 sql/hunting/  10 consultas de caça a ameaças
 src/          gerador de logs, motor de detecção, avaliação, CLI, exportação
 tests/        regras, paridade Python x SQL, avaliação, segurança dos dados
-powerbi/      medidas DAX e tema escuro
+powerbi/      medidas DAX, temas e arquivo .pbix
 docs/         catálogo de regras e metodologia
 examples/     saídas de exemplo
 ```
@@ -82,9 +84,9 @@ As tabelas de `output/powerbi/` (ou `examples/powerbi/`) formam um esquema estre
 - Dimensões: `dim_rule` (com tática e técnica ATT&CK), `dim_ruleset`, `dim_severity`, `dim_date`
 
 As medidas (precisão, recall, F1, redução de falsos positivos etc.) e os relacionamentos estão em
-[`powerbi/measures.dax`](powerbi/measures.dax). O tema é [`powerbi/soc-dark.json`](powerbi/soc-dark.json)
-(Exibir → Temas → Procurar temas). A linha `TOTAL` de `fact_evaluation` pode ser removida no Power Query
-se você preferir somar pelas regras.
+[`powerbi/measures.dax`](powerbi/measures.dax). O tema do dashboard é [`powerbi/soc-editorial.json`](powerbi/soc-editorial.json)
+(Exibição → Temas → Procurar temas); há também uma versão escura em [`powerbi/soc-dark.json`](powerbi/soc-dark.json).
+A linha `TOTAL` de `fact_evaluation` pode ser removida no Power Query se você preferir somar pelas regras.
 
 ## English summary
 
