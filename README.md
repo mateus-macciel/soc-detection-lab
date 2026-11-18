@@ -71,8 +71,8 @@ sql/rules/    as mesmas seis regras em SQL, com funções de janela (SQLite)
 sql/hunting/  10 consultas de caça a ameaças
 src/          gerador de logs, motor de detecção, avaliação, CLI, exportação
 tests/        regras, paridade Python x SQL, avaliação, segurança dos dados
-powerbi/      medidas DAX, temas e arquivo .pbix
-docs/         catálogo de regras e metodologia
+powerbi/      medidas DAX.
+docs/         catálogo de regras e metodologia e .pbix
 examples/     saídas de exemplo
 ```
 
@@ -84,9 +84,8 @@ As tabelas de `output/powerbi/` (ou `examples/powerbi/`) formam um esquema estre
 - Dimensões: `dim_rule` (com tática e técnica ATT&CK), `dim_ruleset`, `dim_severity`, `dim_date`
 
 As medidas (precisão, recall, F1, redução de falsos positivos etc.) e os relacionamentos estão em
-[`powerbi/measures.dax`](powerbi/measures.dax). O tema do dashboard é [`powerbi/soc-editorial.json`](powerbi/soc-editorial.json)
-(Exibição → Temas → Procurar temas); há também uma versão escura em [`powerbi/soc-dark.json`](powerbi/soc-dark.json).
-A linha `TOTAL` de `fact_evaluation` pode ser removida no Power Query se você preferir somar pelas regras.
+[`powerbi/measures.dax`](powerbi/measures.dax). O tema do dashboard é [`powerbi/soc-editorial.json`](soc-editorial.json)
+(Exibição → Temas → Procurar temas).
 
 ## English summary
 
